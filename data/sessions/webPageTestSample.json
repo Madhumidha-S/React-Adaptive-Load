@@ -1,0 +1,599 @@
+{
+    "testId": "240125_AX_ZP27Q",
+    "summary": {
+      "url": "https://example-app.com/",
+      "title": "Example React Application",
+      "testType": "Single Page Application Performance Analysis",
+      "testDate": "2024-01-25T14:32:58.256Z",
+      "location": "Dulles, VA - Chrome",
+      "connectivity": "Cable (5/1 Mbps 28ms RTT)",
+      "device": "Desktop Chrome",
+      "lighthouse_version": "10.1.0",
+      "optimization": "Comparison test (baseline vs. ReactSmart)",
+      "runs": 9,
+      "cached": true,
+      "testComparison": "A/B Test - Variant Testing",
+      "organization": "ReactSmart Research Team"
+    },
+    "testVariants": [
+      {
+        "id": "A",
+        "name": "Baseline (Standard React)",
+        "description": "Standard React build with default component loading",
+        "buildVersion": "baseline-3.5.2",
+        "runIds": ["1", "3", "5", "7", "9"],
+        "markQueryParam": "variant=baseline"
+      },
+      {
+        "id": "B",
+        "name": "ReactSmart Optimized",
+        "description": "React build with ReactSmart predictive component loading",
+        "buildVersion": "reactsmart-1.2.3",
+        "runIds": ["2", "4", "6", "8"],
+        "markQueryParam": "variant=optimized"
+      }
+    ],
+    "testAggregate": {
+      "baseline": {
+        "firstView": {
+          "loadTime": 2245,
+          "TTFB": 325,
+          "startRender": 850,
+          "SpeedIndex": 1320,
+          "firstContentfulPaint": 875,
+          "largestContentfulPaint": 1720,
+          "firstMeaningfulPaint": 1150,
+          "timeToInteractive": 1950,
+          "totalBlockingTime": 380,
+          "firstCPUIdle": 1720,
+          "visualComplete": 2450,
+          "fullyLoaded": 3150,
+          "bytesIn": 1350245,
+          "requests": 36,
+          "domElements": 1245,
+          "domInteractive": 1150,
+          "domContentLoaded": 1250,
+          "domComplete": 2245,
+          "cumulativeLayoutShift": 0.21,
+          "totalByteWeight": 1452365,
+          "maxServerLatency": 325,
+          "mainThreadWorkBreakdown": {
+            "scriptEvaluation": 485,
+            "styleLayout": 345,
+            "rendering": 245,
+            "painting": 125,
+            "other": 95
+          },
+          "javascriptExecutionTime": 685,
+          "jsHeapUsedSize": 28.5,
+          "estimatedInputLatency": 125
+        },
+        "repeatView": {
+          "loadTime": 1245,
+          "TTFB": 175,
+          "startRender": 485,
+          "SpeedIndex": 685,
+          "firstContentfulPaint": 495,
+          "largestContentfulPaint": 1050,
+          "firstMeaningfulPaint": 585,
+          "timeToInteractive": 1150,
+          "totalBlockingTime": 210,
+          "firstCPUIdle": 950,
+          "visualComplete": 1425,
+          "fullyLoaded": 1825,
+          "bytesIn": 345720,
+          "requests": 18,
+          "domElements": 1245,
+          "domInteractive": 650,
+          "domContentLoaded": 725,
+          "domComplete": 1245,
+          "cumulativeLayoutShift": 0.15,
+          "totalByteWeight": 452485,
+          "maxServerLatency": 175,
+          "javascriptExecutionTime": 385,
+          "jsHeapUsedSize": 24.5,
+          "estimatedInputLatency": 75
+        }
+      },
+      "optimized": {
+        "firstView": {
+          "loadTime": 1050,
+          "TTFB": 320,
+          "startRender": 450,
+          "SpeedIndex": 675,
+          "firstContentfulPaint": 475,
+          "largestContentfulPaint": 885,
+          "firstMeaningfulPaint": 580,
+          "timeToInteractive": 875,
+          "totalBlockingTime": 150,
+          "firstCPUIdle": 790,
+          "visualComplete": 1250,
+          "fullyLoaded": 1650,
+          "bytesIn": 725420,
+          "requests": 28,
+          "domElements": 1245,
+          "domInteractive": 550,
+          "domContentLoaded": 620,
+          "domComplete": 1050,
+          "cumulativeLayoutShift": 0.09,
+          "totalByteWeight": 824320,
+          "maxServerLatency": 320,
+          "mainThreadWorkBreakdown": {
+            "scriptEvaluation": 215,
+            "styleLayout": 165,
+            "rendering": 135,
+            "painting": 65,
+            "other": 45
+          },
+          "javascriptExecutionTime": 285,
+          "jsHeapUsedSize": 24.2,
+          "estimatedInputLatency": 45
+        },
+        "repeatView": {
+          "loadTime": 650,
+          "TTFB": 175,
+          "startRender": 285,
+          "SpeedIndex": 375,
+          "firstContentfulPaint": 290,
+          "largestContentfulPaint": 525,
+          "firstMeaningfulPaint": 325,
+          "timeToInteractive": 585,
+          "totalBlockingTime": 85,
+          "firstCPUIdle": 525,
+          "visualComplete": 825,
+          "fullyLoaded": 1050,
+          "bytesIn": 245850,
+          "requests": 16,
+          "domElements": 1245,
+          "domInteractive": 380,
+          "domContentLoaded": 425,
+          "domComplete": 650,
+          "cumulativeLayoutShift": 0.06,
+          "totalByteWeight": 325480,
+          "maxServerLatency": 175,
+          "javascriptExecutionTime": 185,
+          "jsHeapUsedSize": 22.5,
+          "estimatedInputLatency": 35
+        }
+      }
+    },
+    "detailedTestRuns": [
+      {
+        "run": 1,
+        "variant": "baseline",
+        "url": "https://example-app.com/?variant=baseline",
+        "loadTime": 2267,
+        "TTFB": 328,
+        "firstContentfulPaint": 882,
+        "largestContentfulPaint": 1735,
+        "timeToInteractive": 1968,
+        "SpeedIndex": 1335,
+        "visuallyComplete": 2475,
+        "cumulativeLayoutShift": 0.22,
+        "userTiming": {
+          "mark_app_cache_loaded": 685,
+          "mark_react_bootstrap_start": 720,
+          "mark_initial_components_loaded": 940,
+          "mark_data_fetch_start": 990,
+          "mark_data_fetch_complete": 1350,
+          "mark_render_complete": 1540
+        },
+        "jsFrameworkData": {
+          "reactComponentCount": 24,
+          "reactRenderDuration": 485,
+          "reactMountedComponentCount": 18,
+          "reactSuspenseCount": 4,
+          "initialComponents": 14,
+          "lazyLoadedComponents": 10
+        },
+        "requests": 37,
+        "requestDetails": [
+          {
+            "url": "https://example-app.com/?variant=baseline",
+            "type": "Document",
+            "size": 45685,
+            "timing": {
+              "dns": 35,
+              "connect": 142,
+              "ttfb": 328,
+              "download": 225
+            }
+          },
+          {
+            "url": "https://example-app.com/static/js/main.84d56e32.js",
+            "type": "Script",
+            "size": 862450,
+            "timing": {
+              "dns": 0,
+              "connect": 0,
+              "ttfb": 152,
+              "download": 390
+            }
+          },
+          {
+            "url": "https://example-app.com/static/css/main.5f362e1b.css",
+            "type": "Stylesheet",
+            "size": 125735,
+            "timing": {
+              "dns": 0,
+              "connect": 0,
+              "ttfb": 128,
+              "download": 95
+            }
+          }
+        ]
+      },
+      {
+        "run": 2,
+        "variant": "optimized",
+        "url": "https://example-app.com/?variant=optimized",
+        "loadTime": 1068,
+        "TTFB": 324,
+        "firstContentfulPaint": 482,
+        "largestContentfulPaint": 892,
+        "timeToInteractive": 884,
+        "SpeedIndex": 685,
+        "visuallyComplete": 1265,
+        "cumulativeLayoutShift": 0.09,
+        "userTiming": {
+          "mark_app_cache_loaded": 352,
+          "mark_react_bootstrap_start": 385,
+          "mark_react_smart_prediction_start": 380,
+          "mark_react_smart_first_prediction": 435,
+          "mark_initial_components_loaded": 490,
+          "mark_data_fetch_start": 515,
+          "mark_data_fetch_complete": 635,
+          "mark_render_complete": 730
+        },
+        "jsFrameworkData": {
+          "reactComponentCount": 24,
+          "reactRenderDuration": 245,
+          "reactMountedComponentCount": 12,
+          "reactSuspenseCount": 6,
+          "initialComponents": 8,
+          "predictivelyLoadedComponents": 10,
+          "lazyLoadedComponents": 6
+        },
+        "requests": 28,
+        "requestDetails": [
+          {
+            "url": "https://example-app.com/?variant=optimized",
+            "type": "Document",
+            "size": 42850,
+            "timing": {
+              "dns": 32,
+              "connect": 140,
+              "ttfb": 324,
+              "download": 85
+            }
+          },
+          {
+            "url": "https://example-app.com/static/js/main.reactsmart.92a31b45.js",
+            "type": "Script",
+            "size": 430150,
+            "timing": {
+              "dns": 0,
+              "connect": 0,
+              "ttfb": 138,
+              "download": 132
+            }
+          },
+          {
+            "url": "https://example-app.com/static/js/chunk-catalog-1.reactsmart.62f45e8a.js",
+            "type": "Script",
+            "size": 126450,
+            "timing": {
+              "dns": 0,
+              "connect": 0,
+              "ttfb": 88,
+              "download": 70
+            }
+          },
+          {
+            "url": "https://example-app.com/static/css/main.reactsmart.18d2e5f3.css",
+            "type": "Stylesheet",
+            "size": 125250,
+            "timing": {
+              "dns": 0,
+              "connect": 0,
+              "ttfb": 105,
+              "download": 88
+            }
+          }
+        ]
+      }
+    ],
+    "filmstripComparison": {
+      "interval": 250,
+      "count": 12,
+      "urls": [
+        {
+          "time": 0,
+          "baseline": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/1_screen_000.jpg",
+          "optimized": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/2_screen_000.jpg"
+        },
+        {
+          "time": 250,
+          "baseline": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/1_screen_001.jpg",
+          "optimized": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/2_screen_001.jpg"
+        },
+        {
+          "time": 500,
+          "baseline": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/1_screen_002.jpg",
+          "optimized": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/2_screen_002.jpg"
+        },
+        {
+          "time": 750,
+          "baseline": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/1_screen_003.jpg",
+          "optimized": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/2_screen_003.jpg"
+        },
+        {
+          "time": 1000,
+          "baseline": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/1_screen_004.jpg",
+          "optimized": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/2_screen_004.jpg"
+        },
+        {
+          "time": 1250,
+          "baseline": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/1_screen_005.jpg",
+          "optimized": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/2_screen_005.jpg"
+        },
+        {
+          "time": 1500,
+          "baseline": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/1_screen_006.jpg",
+          "optimized": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/2_screen_006.jpg"
+        },
+        {
+          "time": 1750,
+          "baseline": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/1_screen_007.jpg",
+          "optimized": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/2_screen_007.jpg"
+        },
+        {
+          "time": 2000,
+          "baseline": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/1_screen_008.jpg",
+          "optimized": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/2_screen_008.jpg"
+        },
+        {
+          "time": 2250,
+          "baseline": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/1_screen_009.jpg",
+          "optimized": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/2_screen_009.jpg"
+        },
+        {
+          "time": 2500,
+          "baseline": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/1_screen_010.jpg",
+          "optimized": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/2_screen_010.jpg"
+        },
+        {
+          "time": 2750,
+          "baseline": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/1_screen_011.jpg",
+          "optimized": "https://webpagetest.org/results/24/01/25/AX/ZP27Q/2_screen_011.jpg"
+        }
+      ]
+    },
+    "reactComponentMetrics": {
+      "baseline": {
+        "initialRenderComponentCount": 14,
+        "totalComponentCount": 24,
+        "componentBreakdown": [
+          {"name": "AppShell", "renderTime": 85, "size": 42},
+          {"name": "Header", "renderTime": 28, "size": 18},
+          {"name": "Footer", "renderTime": 23, "size": 16},
+          {"name": "ProductGrid", "renderTime": 98, "size": 86},
+          {"name": "ProductCard", "renderTime": 66, "size": 32},
+          {"name": "NavigationMenu", "renderTime": 42, "size": 22},
+          {"name": "SearchBar", "renderTime": 29, "size": 16},
+          {"name": "FilterPanel", "renderTime": 45, "size": 29},
+          {"name": "Carousel", "renderTime": 62, "size": 45}
+        ],
+        "loadingSequence": [
+          {"time": 0, "component": "AppShell", "type": "initial"},
+          {"time": 125, "component": "Header", "type": "initial"},
+          {"time": 165, "component": "Footer", "type": "initial"},
+          {"time": 210, "component": "NavigationMenu", "type": "initial"},
+          {"time": 285, "component": "SearchBar", "type": "initial"},
+          {"time": 455, "component": "ProductGrid", "type": "initial"},
+          {"time": 685, "component": "ProductCard", "type": "lazy"},
+          {"time": 785, "component": "FilterPanel", "type": "lazy"},
+          {"time": 985, "component": "Carousel", "type": "lazy"}
+        ],
+        "rerenderStats": {
+          "totalRerenders": 36,
+          "unnecessaryRerenders": 12,
+          "averageRerenderTime": 28
+        },
+        "suspenseStats": {
+          "suspenseFallbackCount": 8,
+          "suspenseFallbackDisplayTimeAverage": 425
+        }
+      },
+      "optimized": {
+        "initialRenderComponentCount": 8,
+        "totalComponentCount": 24,
+        "componentBreakdown": [
+          {"name": "AppShell", "renderTime": 43, "size": 42},
+          {"name": "Header", "renderTime": 15, "size": 18},
+          {"name": "Footer", "renderTime": 13, "size": 16},
+          {"name": "ProductGrid", "renderTime": 45, "size": 86},
+          {"name": "ProductCard", "renderTime": 32, "size": 32},
+          {"name": "NavigationMenu", "renderTime": 22, "size": 22},
+          {"name": "SearchBar", "renderTime": 15, "size": 16},
+          {"name": "FilterPanel", "renderTime": 24, "size": 29},
+          {"name": "Carousel", "renderTime": 32, "size": 45}
+        ],
+        "loadingSequence": [
+          {"time": 0, "component": "AppShell", "type": "initial"},
+          {"time": 68, "component": "Header", "type": "initial"},
+          {"time": 95, "component": "Footer", "type": "initial"},
+          {"time": 125, "component": "NavigationMenu", "type": "initial"},
+          {"time": 185, "component": "ProductGrid", "type": "predicted"},
+          {"time": 215, "component": "SearchBar", "type": "predicted"},
+          {"time": 245, "component": "ProductCard", "type": "predicted"},
+          {"time": 485, "component": "FilterPanel", "type": "lazy"},
+          {"time": 525, "component": "Carousel", "type": "lazy"}
+        ],
+        "rerenderStats": {
+          "totalRerenders": 24,
+          "unnecessaryRerenders": 5,
+          "averageRerenderTime": 15
+        },
+        "suspenseStats": {
+          "suspenseFallbackCount": 2,
+          "suspenseFallbackDisplayTimeAverage": 165
+        },
+        "predictionStats": {
+          "correctPredictions": 18,
+          "incorrectPredictions": 2,
+          "accuracyRate": 0.9,
+          "averagePredictionTime": 8.5,
+          "totalPredictions": 20
+        }
+      }
+    },
+    "lighthouse": {
+      "baseline": {
+        "performance": 68,
+        "accessibility": 92,
+        "bestPractices": 88,
+        "seo": 96,
+        "pwa": 58,
+        "audits": {
+          "first-contentful-paint": {
+            "id": "first-contentful-paint",
+            "title": "First Contentful Paint",
+            "description": "First Contentful Paint marks the time at which the first text or image is painted.",
+            "score": 0.72,
+            "numericValue": 882,
+            "displayValue": "0.9 s"
+          },
+          "largest-contentful-paint": {
+            "id": "largest-contentful-paint",
+            "title": "Largest Contentful Paint",
+            "description": "Largest Contentful Paint marks the time at which the largest text or image is painted.",
+            "score": 0.58,
+            "numericValue": 1735,
+            "displayValue": "1.7 s"
+          },
+          "total-blocking-time": {
+            "id": "total-blocking-time",
+            "title": "Total Blocking Time",
+            "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms.",
+            "score": 0.55,
+            "numericValue": 380,
+            "displayValue": "380 ms"
+          },
+          "cumulative-layout-shift": {
+            "id": "cumulative-layout-shift",
+            "title": "Cumulative Layout Shift",
+            "description": "Cumulative Layout Shift measures the movement of visible elements within the viewport.",
+            "score": 0.62,
+            "numericValue": 0.22,
+            "displayValue": "0.22"
+          }
+        }
+      },
+      "optimized": {
+        "performance": 92,
+        "accessibility": 94,
+        "bestPractices": 92,
+        "seo": 98,
+        "pwa": 68,
+        "audits": {
+          "first-contentful-paint": {
+            "id": "first-contentful-paint",
+            "title": "First Contentful Paint",
+            "description": "First Contentful Paint marks the time at which the first text or image is painted.",
+            "score": 0.92,
+            "numericValue": 482,
+            "displayValue": "0.5 s"
+          },
+          "largest-contentful-paint": {
+            "id": "largest-contentful-paint",
+            "title": "Largest Contentful Paint",
+            "description": "Largest Contentful Paint marks the time at which the largest text or image is painted.",
+            "score": 0.88,
+            "numericValue": 892,
+            "displayValue": "0.9 s"
+          },
+          "total-blocking-time": {
+            "id": "total-blocking-time",
+            "title": "Total Blocking Time",
+            "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms.",
+            "score": 0.85,
+            "numericValue": 150,
+            "displayValue": "150 ms"
+          },
+          "cumulative-layout-shift": {
+            "id": "cumulative-layout-shift",
+            "title": "Cumulative Layout Shift",
+            "description": "Cumulative Layout Shift measures the movement of visible elements within the viewport.",
+            "score": 0.92,
+            "numericValue": 0.09,
+            "displayValue": "0.09"
+          }
+        }
+      }
+    },
+    "visualComparison": {
+      "speedIndexReduction": 0.49,
+      "visualCompleteReduction": 0.49,
+      "progressiveRenderingImprovement": 0.65,
+      "contentfulPaintReduction": 0.45,
+      "layoutStabilityImprovement": 0.59,
+      "visualDifference": "minimal",
+      "userInteractionLatencyReduction": 0.64
+    },
+    "performanceBudgets": {
+      "baseline": {
+        "totalBytesTarget": 1500000,
+        "totalBytesActual": 1452365,
+        "totalBytesStatus": "pass",
+        "scriptBytesTarget": 900000,
+        "scriptBytesActual": 862450,
+        "scriptBytesStatus": "pass",
+        "cssTarget": 150000,
+        "cssActual": 125735,
+        "cssStatus": "pass",
+        "fontTarget": 120000,
+        "fontActual": 95000,
+        "fontStatus": "pass",
+        "imageTarget": 400000,
+        "imageActual": 325000,
+        "imageStatus": "pass",
+        "requestCountTarget": 50,
+        "requestCountActual": 37,
+        "requestCountStatus": "pass",
+        "timeToInteractiveTarget": 2500,
+        "timeToInteractiveActual": 1968,
+        "timeToInteractiveStatus": "pass"
+      },
+      "optimized": {
+        "totalBytesTarget": 1500000,
+        "totalBytesActual": 824320,
+        "totalBytesStatus": "pass",
+        "scriptBytesTarget": 900000,
+        "scriptBytesActual": 556600,
+        "scriptBytesStatus": "pass",
+        "cssTarget": 150000,
+        "cssActual": 125250,
+        "cssStatus": "pass",
+        "fontTarget": 120000,
+        "fontActual": 95000,
+        "fontStatus": "pass",
+        "imageTarget": 400000,
+        "imageActual": 325000,
+        "imageStatus": "pass",
+        "requestCountTarget": 50,
+        "requestCountActual": 28,
+        "requestCountStatus": "pass",
+        "timeToInteractiveTarget": 2500,
+        "timeToInteractiveActual": 884,
+        "timeToInteractiveStatus": "pass"
+      },
+      "improvement": {
+        "totalBytesReduction": 0.43,
+        "scriptBytesReduction": 0.35,
+        "cssReduction": 0.00,
+        "requestCountReduction": 0.24,
+        "timeToInteractiveReduction": 0.55
+      }
+    }
+  }

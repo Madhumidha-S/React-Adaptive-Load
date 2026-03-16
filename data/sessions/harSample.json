@@ -1,0 +1,885 @@
+{
+    "log": {
+      "version": "1.2",
+      "creator": {
+        "name": "WebPageTest",
+        "version": "2023.10.1"
+      },
+      "browser": {
+        "name": "Chrome",
+        "version": "119.0.6045.123"
+      },
+      "pages": [
+        {
+          "startedDateTime": "2024-01-15T09:23:45.826Z",
+          "id": "page_1",
+          "title": "Example React Application",
+          "pageTimings": {
+            "onContentLoad": 1245.328,
+            "onLoad": 2175.942
+          },
+          "metadata": {
+            "optimization": "baseline",
+            "deviceType": "desktop",
+            "networkType": "cable",
+            "sessionId": "har-8765432109"
+          },
+          "_chromeUserTiming": [
+            {
+              "name": "fetchStart",
+              "time": 0
+            },
+            {
+              "name": "domainLookupStart",
+              "time": 12.5
+            },
+            {
+              "name": "domainLookupEnd",
+              "time": 45.2
+            },
+            {
+              "name": "connectStart",
+              "time": 45.2
+            },
+            {
+              "name": "secureConnectionStart",
+              "time": 78.9
+            },
+            {
+              "name": "connectEnd",
+              "time": 182.3
+            },
+            {
+              "name": "requestStart",
+              "time": 183.1
+            },
+            {
+              "name": "responseStart",
+              "time": 352.8
+            },
+            {
+              "name": "responseEnd",
+              "time": 584.6
+            },
+            {
+              "name": "domLoading",
+              "time": 598.3
+            },
+            {
+              "name": "domInteractive",
+              "time": 1165.2
+            },
+            {
+              "name": "domContentLoadedEventStart",
+              "time": 1245.3
+            },
+            {
+              "name": "domContentLoadedEventEnd",
+              "time": 1257.9
+            },
+            {
+              "name": "domComplete",
+              "time": 2175.4
+            },
+            {
+              "name": "loadEventStart",
+              "time": 2175.9
+            },
+            {
+              "name": "loadEventEnd",
+              "time": 2182.3
+            },
+            {
+              "name": "firstPaint",
+              "time": 812.5
+            },
+            {
+              "name": "firstContentfulPaint",
+              "time": 865.3
+            },
+            {
+              "name": "firstMeaningfulPaint",
+              "time": 1125.8
+            },
+            {
+              "name": "largestContentfulPaint",
+              "time": 1542.7
+            },
+            {
+              "name": "timeToInteractive",
+              "time": 1785.2
+            },
+            {
+              "name": "mark_app_cache_loaded",
+              "time": 678.4
+            },
+            {
+              "name": "mark_react_bootstrap_start",
+              "time": 715.8
+            },
+            {
+              "name": "mark_initial_components_loaded",
+              "time": 932.6
+            },
+            {
+              "name": "mark_data_fetch_start",
+              "time": 986.4
+            },
+            {
+              "mark": "mark_data_fetch_complete",
+              "time": 1345.2
+            },
+            {
+              "mark": "mark_render_complete",
+              "time": 1534.8
+            }
+          ],
+          "_chromeInteractions": [
+            {
+              "type": "click",
+              "time": 2387.5,
+              "targetElement": "#main-nav-menu",
+              "firstInputDelay": 95.4,
+              "processingTime": 153.8,
+              "totalBlockingTime": 84.2
+            },
+            {
+              "type": "click",
+              "time": 4286.3,
+              "targetElement": ".product-card-12",
+              "firstInputDelay": 45.2,
+              "processingTime": 125.7,
+              "totalBlockingTime": 65.3
+            },
+            {
+              "type": "keypress",
+              "time": 8456.2,
+              "targetElement": "#search-input",
+              "firstInputDelay": 38.9,
+              "processingTime": 82.5,
+              "totalBlockingTime": 32.1
+            }
+          ],
+          "_layoutShifts": [
+            {
+              "time": 875.3,
+              "score": 0.08,
+              "elements": ["#header-banner", ".top-promo-section"]
+            },
+            {
+              "time": 1126.8,
+              "score": 0.12,
+              "elements": [".product-grid-container", ".sidebar-filter"]
+            },
+            {
+              "time": 1485.2,
+              "score": 0.03,
+              "elements": [".footer-newsletter"]
+            }
+          ],
+          "_resourceEvaluation": {
+            "mainThreadWork": {
+              "scriptEvaluation": 485.2,
+              "styleLayout": 345.8,
+              "rendering": 243.6,
+              "painting": 125.4,
+              "other": 95.3
+            },
+            "totalJSHeapSize": 35.8,
+            "jsHeapSizeLimit": 2048.0,
+            "usedJSHeapSize": 28.3
+          }
+        },
+        {
+          "startedDateTime": "2024-01-15T14:18:32.452Z",
+          "id": "page_2",
+          "title": "Example React Application",
+          "pageTimings": {
+            "onContentLoad": 585.246,
+            "onLoad": 982.637
+          },
+          "metadata": {
+            "optimization": "optimized",
+            "deviceType": "desktop",
+            "networkType": "cable",
+            "sessionId": "har-1234567890"
+          },
+          "_chromeUserTiming": [
+            {
+              "name": "fetchStart",
+              "time": 0
+            },
+            {
+              "name": "domainLookupStart",
+              "time": 11.8
+            },
+            {
+              "name": "domainLookupEnd",
+              "time": 42.6
+            },
+            {
+              "name": "connectStart",
+              "time": 42.6
+            },
+            {
+              "name": "secureConnectionStart",
+              "time": 76.3
+            },
+            {
+              "name": "connectEnd",
+              "time": 178.5
+            },
+            {
+              "name": "requestStart",
+              "time": 179.2
+            },
+            {
+              "name": "responseStart",
+              "time": 345.6
+            },
+            {
+              "name": "responseEnd",
+              "time": 425.4
+            },
+            {
+              "name": "domLoading",
+              "time": 432.8
+            },
+            {
+              "name": "domInteractive",
+              "time": 542.3
+            },
+            {
+              "name": "domContentLoadedEventStart",
+              "time": 585.2
+            },
+            {
+              "name": "domContentLoadedEventEnd",
+              "time": 592.4
+            },
+            {
+              "name": "domComplete",
+              "time": 982.1
+            },
+            {
+              "name": "loadEventStart",
+              "time": 982.6
+            },
+            {
+              "name": "loadEventEnd",
+              "time": 986.9
+            },
+            {
+              "name": "firstPaint",
+              "time": 465.2
+            },
+            {
+              "name": "firstContentfulPaint",
+              "time": 482.7
+            },
+            {
+              "name": "firstMeaningfulPaint",
+              "time": 524.5
+            },
+            {
+              "name": "largestContentfulPaint",
+              "time": 728.6
+            },
+            {
+              "name": "timeToInteractive",
+              "time": 726.8
+            },
+            {
+              "name": "mark_app_cache_loaded",
+              "time": 345.6
+            },
+            {
+              "name": "mark_react_bootstrap_start",
+              "time": 382.4
+            },
+            {
+              "name": "mark_initial_components_loaded",
+              "time": 485.2
+            },
+            {
+              "name": "mark_data_fetch_start",
+              "time": 512.8
+            },
+            {
+              "mark": "mark_data_fetch_complete",
+              "time": 632.5
+            },
+            {
+              "mark": "mark_render_complete",
+              "time": 725.6
+            },
+            {
+              "mark": "mark_react_smart_prediction_start",
+              "time": 378.2
+            },
+            {
+              "mark": "mark_react_smart_first_prediction",
+              "time": 432.5
+            }
+          ],
+          "_chromeInteractions": [
+            {
+              "type": "click",
+              "time": 1354.2,
+              "targetElement": "#main-nav-menu",
+              "firstInputDelay": 32.6,
+              "processingTime": 68.5,
+              "totalBlockingTime": 28.7
+            },
+            {
+              "type": "click",
+              "time": 3285.9,
+              "targetElement": ".product-card-12",
+              "firstInputDelay": 24.8,
+              "processingTime": 52.3,
+              "totalBlockingTime": 21.5
+            },
+            {
+              "type": "keypress",
+              "time": 7654.3,
+              "targetElement": "#search-input",
+              "firstInputDelay": 18.5,
+              "processingTime": 45.2,
+              "totalBlockingTime": 15.8
+            }
+          ],
+          "_layoutShifts": [
+            {
+              "time": 485.6,
+              "score": 0.04,
+              "elements": ["#header-banner"]
+            },
+            {
+              "time": 524.8,
+              "score": 0.05,
+              "elements": [".product-grid-container"]
+            }
+          ],
+          "_resourceEvaluation": {
+            "mainThreadWork": {
+              "scriptEvaluation": 215.6,
+              "styleLayout": 168.3,
+              "rendering": 132.5,
+              "painting": 65.2,
+              "other": 45.8
+            },
+            "totalJSHeapSize": 32.5,
+            "jsHeapSizeLimit": 2048.0,
+            "usedJSHeapSize": 24.2
+          }
+        }
+      ],
+      "entries": [
+        {
+          "pageref": "page_1",
+          "startedDateTime": "2024-01-15T09:23:45.826Z",
+          "request": {
+            "method": "GET",
+            "url": "https://example-app.com/",
+            "httpVersion": "HTTP/2",
+            "headers": [
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.123 Safari/537.36"
+              },
+              {
+                "name": "Accept",
+                "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8"
+              }
+            ],
+            "queryString": [],
+            "cookies": [],
+            "headersSize": 456,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/2",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=utf-8"
+              },
+              {
+                "name": "Content-Length",
+                "value": "45623"
+              },
+              {
+                "name": "Server",
+                "value": "nginx/1.20.1"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "size": 45623,
+              "mimeType": "text/html",
+              "compression": 0
+            },
+            "redirectURL": "",
+            "headersSize": 345,
+            "bodySize": 45623,
+            "_transferSize": 45968
+          },
+          "cache": {},
+          "timings": {
+            "blocked": 12.5,
+            "dns": 32.7,
+            "connect": 137.1,
+            "ssl": 103.4,
+            "send": 0.8,
+            "wait": 169.7,
+            "receive": 231.8
+          },
+          "time": 688.0,
+          "_resourceType": "document"
+        },
+        {
+          "pageref": "page_1",
+          "startedDateTime": "2024-01-15T09:23:46.514Z",
+          "request": {
+            "method": "GET",
+            "url": "https://example-app.com/static/js/main.84d56e32.js",
+            "httpVersion": "HTTP/2",
+            "headers": [
+              {
+                "name": "Referer",
+                "value": "https://example-app.com/"
+              }
+            ],
+            "queryString": [],
+            "cookies": [],
+            "headersSize": 235,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/2",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/javascript"
+              },
+              {
+                "name": "Content-Length",
+                "value": "859432"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "public, max-age=31536000"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "size": 859432,
+              "mimeType": "application/javascript",
+              "compression": 0
+            },
+            "redirectURL": "",
+            "headersSize": 245,
+            "bodySize": 859432,
+            "_transferSize": 859677
+          },
+          "cache": {},
+          "timings": {
+            "blocked": 5.2,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0.6,
+            "wait": 145.8,
+            "receive": 384.5
+          },
+          "time": 536.1,
+          "_resourceType": "script"
+        },
+        {
+          "pageref": "page_1",
+          "startedDateTime": "2024-01-15T09:23:46.582Z",
+          "request": {
+            "method": "GET",
+            "url": "https://example-app.com/static/css/main.5f362e1b.css",
+            "httpVersion": "HTTP/2",
+            "headers": [
+              {
+                "name": "Referer",
+                "value": "https://example-app.com/"
+              }
+            ],
+            "queryString": [],
+            "cookies": [],
+            "headersSize": 235,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/2",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/css"
+              },
+              {
+                "name": "Content-Length",
+                "value": "124568"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "public, max-age=31536000"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "size": 124568,
+              "mimeType": "text/css",
+              "compression": 0
+            },
+            "redirectURL": "",
+            "headersSize": 218,
+            "bodySize": 124568,
+            "_transferSize": 124786
+          },
+          "cache": {},
+          "timings": {
+            "blocked": 4.8,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0.5,
+            "wait": 125.4,
+            "receive": 89.5
+          },
+          "time": 220.2,
+          "_resourceType": "stylesheet"
+        },
+        {
+          "pageref": "page_2",
+          "startedDateTime": "2024-01-15T14:18:32.452Z",
+          "request": {
+            "method": "GET",
+            "url": "https://example-app.com/",
+            "httpVersion": "HTTP/2",
+            "headers": [
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.123 Safari/537.36"
+              },
+              {
+                "name": "Accept",
+                "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8"
+              }
+            ],
+            "queryString": [],
+            "cookies": [],
+            "headersSize": 456,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/2",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=utf-8"
+              },
+              {
+                "name": "Content-Length",
+                "value": "42568"
+              },
+              {
+                "name": "Server",
+                "value": "nginx/1.20.1"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "size": 42568,
+              "mimeType": "text/html",
+              "compression": 0
+            },
+            "redirectURL": "",
+            "headersSize": 345,
+            "bodySize": 42568,
+            "_transferSize": 42913
+          },
+          "cache": {},
+          "timings": {
+            "blocked": 11.8,
+            "dns": 30.8,
+            "connect": 135.9,
+            "ssl": 102.2,
+            "send": 0.7,
+            "wait": 166.4,
+            "receive": 79.8
+          },
+          "time": 527.6,
+          "_resourceType": "document"
+        },
+        {
+          "pageref": "page_2",
+          "startedDateTime": "2024-01-15T14:18:32.980Z",
+          "request": {
+            "method": "GET",
+            "url": "https://example-app.com/static/js/main.reactsmart.92a31b45.js",
+            "httpVersion": "HTTP/2",
+            "headers": [
+              {
+                "name": "Referer",
+                "value": "https://example-app.com/"
+              }
+            ],
+            "queryString": [],
+            "cookies": [],
+            "headersSize": 235,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/2",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/javascript"
+              },
+              {
+                "name": "Content-Length",
+                "value": "428765"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "public, max-age=31536000"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "size": 428765,
+              "mimeType": "application/javascript",
+              "compression": 0
+            },
+            "redirectURL": "",
+            "headersSize": 245,
+            "bodySize": 428765,
+            "_transferSize": 429010
+          },
+          "cache": {},
+          "timings": {
+            "blocked": 4.8,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0.5,
+            "wait": 135.4,
+            "receive": 124.8
+          },
+          "time": 265.5,
+          "_resourceType": "script"
+        },
+        {
+          "pageref": "page_2",
+          "startedDateTime": "2024-01-15T14:18:33.026Z",
+          "request": {
+            "method": "GET",
+            "url": "https://example-app.com/static/js/chunk-catalog-1.reactsmart.62f45e8a.js",
+            "httpVersion": "HTTP/2",
+            "headers": [
+              {
+                "name": "Referer",
+                "value": "https://example-app.com/"
+              }
+            ],
+            "queryString": [],
+            "cookies": [],
+            "headersSize": 235,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/2",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/javascript"
+              },
+              {
+                "name": "Content-Length",
+                "value": "125432"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "public, max-age=31536000"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "size": 125432,
+              "mimeType": "application/javascript",
+              "compression": 0
+            },
+            "redirectURL": "",
+            "headersSize": 245,
+            "bodySize": 125432,
+            "_transferSize": 125677
+          },
+          "cache": {},
+          "timings": {
+            "blocked": 3.5,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0.4,
+            "wait": 85.6,
+            "receive": 65.2
+          },
+          "time": 154.7,
+          "_resourceType": "script"
+        },
+        {
+          "pageref": "page_2",
+          "startedDateTime": "2024-01-15T14:18:33.042Z",
+          "request": {
+            "method": "GET",
+            "url": "https://example-app.com/static/css/main.reactsmart.18d2e5f3.css",
+            "httpVersion": "HTTP/2",
+            "headers": [
+              {
+                "name": "Referer",
+                "value": "https://example-app.com/"
+              }
+            ],
+            "queryString": [],
+            "cookies": [],
+            "headersSize": 235,
+            "bodySize": 0
+          },
+          "response": {
+            "status": 200,
+            "statusText": "OK",
+            "httpVersion": "HTTP/2",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "text/css"
+              },
+              {
+                "name": "Content-Length",
+                "value": "124532"
+              },
+              {
+                "name": "Cache-Control",
+                "value": "public, max-age=31536000"
+              }
+            ],
+            "cookies": [],
+            "content": {
+              "size": 124532,
+              "mimeType": "text/css",
+              "compression": 0
+            },
+            "redirectURL": "",
+            "headersSize": 218,
+            "bodySize": 124532,
+            "_transferSize": 124750
+          },
+          "cache": {},
+          "timings": {
+            "blocked": 4.2,
+            "dns": 0,
+            "connect": 0,
+            "ssl": 0,
+            "send": 0.5,
+            "wait": 105.2,
+            "receive": 84.3
+          },
+          "time": 194.2,
+          "_resourceType": "stylesheet"
+        }
+      ],
+      "_reactComponentBreakdown": {
+        "baseline": {
+          "components": [
+            {"name": "AppShell", "loadTime": 125.4, "renderTime": 85.3, "size": 42.6},
+            {"name": "Header", "loadTime": 45.2, "renderTime": 28.5, "size": 18.5},
+            {"name": "Footer", "loadTime": 38.7, "renderTime": 23.4, "size": 15.8},
+            {"name": "ProductGrid", "loadTime": 156.8, "renderTime": 98.5, "size": 86.4},
+            {"name": "ProductCard", "loadTime": 125.4, "renderTime": 65.8, "size": 32.5},
+            {"name": "NavigationMenu", "loadTime": 65.3, "renderTime": 42.5, "size": 22.3},
+            {"name": "SearchBar", "loadTime": 42.1, "renderTime": 28.6, "size": 15.5},
+            {"name": "FilterPanel", "loadTime": 78.5, "renderTime": 45.2, "size": 28.6},
+            {"name": "Carousel", "loadTime": 95.2, "renderTime": 62.3, "size": 45.2}
+          ],
+          "initialComponents": ["AppShell", "Header", "Footer", "NavigationMenu", "SearchBar", "ProductGrid"],
+          "lazyLoadedComponents": ["FilterPanel", "Carousel", "ProductCard"],
+          "totalComponentCount": 24,
+          "averageComponentSize": 32.8,
+          "bundleSize": 859.4
+        },
+        "optimized": {
+          "components": [
+            {"name": "AppShell", "loadTime": 68.5, "renderTime": 42.6, "size": 42.6},
+            {"name": "Header", "loadTime": 25.8, "renderTime": 15.3, "size": 18.5},
+            {"name": "Footer", "loadTime": 22.5, "renderTime": 12.7, "size": 15.8},
+            {"name": "ProductGrid", "loadTime": 82.4, "renderTime": 45.2, "size": 86.4},
+            {"name": "ProductCard", "loadTime": 65.2, "renderTime": 32.5, "size": 32.5},
+            {"name": "NavigationMenu", "loadTime": 35.4, "renderTime": 22.5, "size": 22.3},
+            {"name": "SearchBar", "loadTime": 23.5, "renderTime": 14.8, "size": 15.5},
+            {"name": "FilterPanel", "loadTime": 42.8, "renderTime": 24.5, "size": 28.6},
+            {"name": "Carousel", "loadTime": 55.3, "renderTime": 32.5, "size": 45.2}
+          ],
+          "initialComponents": ["AppShell", "Header", "Footer", "NavigationMenu"],
+          "predictivelyLoadedComponents": ["ProductGrid", "SearchBar", "ProductCard"],
+          "lazyLoadedComponents": ["FilterPanel", "Carousel"],
+          "totalComponentCount": 24,
+          "averageComponentSize": 28.5,
+          "bundleSize": 428.8,
+          "chunkedBundles": [
+            {"name": "main", "size": 428.8},
+            {"name": "chunk-catalog-1", "size": 125.4},
+            {"name": "chunk-product-detail", "size": 118.6},
+            {"name": "chunk-checkout", "size": 95.3}
+          ]
+        }
+      },
+      "_performanceSummary": {
+        "baseline": {
+          "loadTime": 2175.9,
+          "timeToInteractive": 1785.2,
+          "firstContentfulPaint": 865.3,
+          "largestContentfulPaint": 1542.7,
+          "firstInputDelay": 95.4,
+          "cumulativeLayoutShift": 0.23,
+          "totalBlockingTime": 347.5,
+          "speedIndex": 1245.8,
+          "resourceLoadTime": 1578.4,
+          "resourceLoadCount": 35,
+          "javaScriptExecutionTime": 485.2,
+          "mainThreadWorkTime": 1295.3,
+          "memoryUsage": 28.3
+        },
+        "optimized": {
+          "loadTime": 982.6,
+          "timeToInteractive": 726.8,
+          "firstContentfulPaint": 482.7,
+          "largestContentfulPaint": 728.6,
+          "firstInputDelay": 32.6,
+          "cumulativeLayoutShift": 0.09,
+          "totalBlockingTime": 142.3,
+          "speedIndex": 625.4,
+          "resourceLoadTime": 684.5,
+          "resourceLoadCount": 28,
+          "javaScriptExecutionTime": 215.6,
+          "mainThreadWorkTime": 627.4,
+          "memoryUsage": 24.2
+        }
+      }
+    }
+  }

@@ -1,0 +1,482 @@
+{
+    "report_metadata": {
+      "source": "Chrome User Experience Report",
+      "report_version": "2024-02",
+      "collection_period": {
+        "start_date": "2024-01-01",
+        "end_date": "2024-01-31"
+      },
+      "url_patterns": [
+        "https://example-app.com/*",
+        "https://subdomain.example-app.com/*"
+      ]
+    },
+    "application_summary": {
+      "name": "Example React Application",
+      "version": "3.5.2",
+      "framework": "React",
+      "optimization_status": {
+        "baseline": "Data collected prior to ReactSmart implementation",
+        "optimized": "Data collected after ReactSmart implementation"
+      }
+    },
+    "aggregated_metrics": {
+      "baseline": {
+        "core_web_vitals": {
+          "largest_contentful_paint": {
+            "good": 0.45,
+            "needs_improvement": 0.32,
+            "poor": 0.23,
+            "p75": 2850
+          },
+          "first_input_delay": {
+            "good": 0.62,
+            "needs_improvement": 0.25,
+            "poor": 0.13,
+            "p75": 135
+          },
+          "cumulative_layout_shift": {
+            "good": 0.58,
+            "needs_improvement": 0.28,
+            "poor": 0.14,
+            "p75": 0.19
+          }
+        },
+        "additional_metrics": {
+          "first_contentful_paint": {
+            "p75": 1850,
+            "p95": 3250
+          },
+          "time_to_interactive": {
+            "p75": 4200,
+            "p95": 6800
+          },
+          "time_to_first_byte": {
+            "p75": 350,
+            "p95": 750
+          },
+          "dom_content_loaded": {
+            "p75": 2100,
+            "p95": 3450
+          }
+        }
+      },
+      "optimized": {
+        "core_web_vitals": {
+          "largest_contentful_paint": {
+            "good": 0.82,
+            "needs_improvement": 0.13,
+            "poor": 0.05,
+            "p75": 1450
+          },
+          "first_input_delay": {
+            "good": 0.89,
+            "needs_improvement": 0.08,
+            "poor": 0.03,
+            "p75": 45
+          },
+          "cumulative_layout_shift": {
+            "good": 0.85,
+            "needs_improvement": 0.11,
+            "poor": 0.04,
+            "p75": 0.08
+          }
+        },
+        "additional_metrics": {
+          "first_contentful_paint": {
+            "p75": 920,
+            "p95": 1650
+          },
+          "time_to_interactive": {
+            "p75": 1980,
+            "p95": 3250
+          },
+          "time_to_first_byte": {
+            "p75": 320,
+            "p95": 680
+          },
+          "dom_content_loaded": {
+            "p75": 1050,
+            "p95": 1850
+          }
+        }
+      }
+    },
+    "device_breakdowns": {
+      "baseline": {
+        "desktop": {
+          "percentage": 0.48,
+          "largest_contentful_paint": {
+            "p75": 2350
+          },
+          "first_input_delay": {
+            "p75": 85
+          },
+          "time_to_interactive": {
+            "p75": 3450
+          }
+        },
+        "mobile": {
+          "percentage": 0.42,
+          "largest_contentful_paint": {
+            "p75": 3450
+          },
+          "first_input_delay": {
+            "p75": 185
+          },
+          "time_to_interactive": {
+            "p75": 5250
+          }
+        },
+        "tablet": {
+          "percentage": 0.10,
+          "largest_contentful_paint": {
+            "p75": 2750
+          },
+          "first_input_delay": {
+            "p75": 135
+          },
+          "time_to_interactive": {
+            "p75": 4150
+          }
+        }
+      },
+      "optimized": {
+        "desktop": {
+          "percentage": 0.47,
+          "largest_contentful_paint": {
+            "p75": 1150
+          },
+          "first_input_delay": {
+            "p75": 35
+          },
+          "time_to_interactive": {
+            "p75": 1650
+          }
+        },
+        "mobile": {
+          "percentage": 0.43,
+          "largest_contentful_paint": {
+            "p75": 1850
+          },
+          "first_input_delay": {
+            "p75": 65
+          },
+          "time_to_interactive": {
+            "p75": 2450
+          }
+        },
+        "tablet": {
+          "percentage": 0.10,
+          "largest_contentful_paint": {
+            "p75": 1350
+          },
+          "first_input_delay": {
+            "p75": 48
+          },
+          "time_to_interactive": {
+            "p75": 1950
+          }
+        }
+      }
+    },
+    "connection_breakdowns": {
+      "baseline": {
+        "4g": {
+          "percentage": 0.62,
+          "largest_contentful_paint": {
+            "p75": 2450
+          },
+          "first_input_delay": {
+            "p75": 110
+          }
+        },
+        "3g": {
+          "percentage": 0.28,
+          "largest_contentful_paint": {
+            "p75": 3850
+          },
+          "first_input_delay": {
+            "p75": 175
+          }
+        },
+        "2g": {
+          "percentage": 0.07,
+          "largest_contentful_paint": {
+            "p75": 5250
+          },
+          "first_input_delay": {
+            "p75": 225
+          }
+        },
+        "slow-2g": {
+          "percentage": 0.03,
+          "largest_contentful_paint": {
+            "p75": 7850
+          },
+          "first_input_delay": {
+            "p75": 285
+          }
+        }
+      },
+      "optimized": {
+        "4g": {
+          "percentage": 0.63,
+          "largest_contentful_paint": {
+            "p75": 1280
+          },
+          "first_input_delay": {
+            "p75": 38
+          }
+        },
+        "3g": {
+          "percentage": 0.27,
+          "largest_contentful_paint": {
+            "p75": 1980
+          },
+          "first_input_delay": {
+            "p75": 62
+          }
+        },
+        "2g": {
+          "percentage": 0.07,
+          "largest_contentful_paint": {
+            "p75": 2750
+          },
+          "first_input_delay": {
+            "p75": 85
+          }
+        },
+        "slow-2g": {
+          "percentage": 0.03,
+          "largest_contentful_paint": {
+            "p75": 3950
+          },
+          "first_input_delay": {
+            "p75": 115
+          }
+        }
+      }
+    },
+    "country_breakdowns": {
+      "baseline": {
+        "US": {
+          "percentage": 0.35,
+          "largest_contentful_paint": {
+            "p75": 2350
+          },
+          "first_input_delay": {
+            "p75": 105
+          }
+        },
+        "IN": {
+          "percentage": 0.18,
+          "largest_contentful_paint": {
+            "p75": 3450
+          },
+          "first_input_delay": {
+            "p75": 185
+          }
+        },
+        "GB": {
+          "percentage": 0.12,
+          "largest_contentful_paint": {
+            "p75": 2550
+          },
+          "first_input_delay": {
+            "p75": 125
+          }
+        },
+        "DE": {
+          "percentage": 0.09,
+          "largest_contentful_paint": {
+            "p75": 2650
+          },
+          "first_input_delay": {
+            "p75": 115
+          }
+        },
+        "BR": {
+          "percentage": 0.08,
+          "largest_contentful_paint": {
+            "p75": 3250
+          },
+          "first_input_delay": {
+            "p75": 155
+          }
+        },
+        "OTHER": {
+          "percentage": 0.18,
+          "largest_contentful_paint": {
+            "p75": 3050
+          },
+          "first_input_delay": {
+            "p75": 145
+          }
+        }
+      },
+      "optimized": {
+        "US": {
+          "percentage": 0.34,
+          "largest_contentful_paint": {
+            "p75": 1180
+          },
+          "first_input_delay": {
+            "p75": 38
+          }
+        },
+        "IN": {
+          "percentage": 0.19,
+          "largest_contentful_paint": {
+            "p75": 1850
+          },
+          "first_input_delay": {
+            "p75": 65
+          }
+        },
+        "GB": {
+          "percentage": 0.12,
+          "largest_contentful_paint": {
+            "p75": 1250
+          },
+          "first_input_delay": {
+            "p75": 42
+          }
+        },
+        "DE": {
+          "percentage": 0.08,
+          "largest_contentful_paint": {
+            "p75": 1350
+          },
+          "first_input_delay": {
+            "p75": 45
+          }
+        },
+        "BR": {
+          "percentage": 0.08,
+          "largest_contentful_paint": {
+            "p75": 1720
+          },
+          "first_input_delay": {
+            "p75": 58
+          }
+        },
+        "OTHER": {
+          "percentage": 0.19,
+          "largest_contentful_paint": {
+            "p75": 1580
+          },
+          "first_input_delay": {
+            "p75": 52
+          }
+        }
+      }
+    },
+    "session_samples": [
+      {
+        "session_id": "crux-1452368795",
+        "country": "US",
+        "device_type": "desktop",
+        "connection_type": "4g",
+        "optimization": "baseline",
+        "metrics": {
+          "navigation_timing": {
+            "time_to_first_byte": 215,
+            "dom_content_loaded": 1875,
+            "load_event": 2350
+          },
+          "paint_timing": {
+            "first_paint": 785,
+            "first_contentful_paint": 1120
+          },
+          "largest_contentful_paint": 2250,
+          "first_input_delay": 95,
+          "cumulative_layout_shift": 0.15,
+          "time_to_interactive": 3250
+        }
+      },
+      {
+        "session_id": "crux-2867459321",
+        "country": "IN",
+        "device_type": "mobile",
+        "connection_type": "3g",
+        "optimization": "baseline",
+        "metrics": {
+          "navigation_timing": {
+            "time_to_first_byte": 425,
+            "dom_content_loaded": 2750,
+            "load_event": 3450
+          },
+          "paint_timing": {
+            "first_paint": 1250,
+            "first_contentful_paint": 1850
+          },
+          "largest_contentful_paint": 3650,
+          "first_input_delay": 185,
+          "cumulative_layout_shift": 0.24,
+          "time_to_interactive": 5450
+        }
+      },
+      {
+        "session_id": "crux-9876543210",
+        "country": "US",
+        "device_type": "desktop",
+        "connection_type": "4g",
+        "optimization": "optimized",
+        "metrics": {
+          "navigation_timing": {
+            "time_to_first_byte": 205,
+            "dom_content_loaded": 950,
+            "load_event": 1250
+          },
+          "paint_timing": {
+            "first_paint": 385,
+            "first_contentful_paint": 525
+          },
+          "largest_contentful_paint": 1150,
+          "first_input_delay": 35,
+          "cumulative_layout_shift": 0.07,
+          "time_to_interactive": 1450
+        }
+      },
+      {
+        "session_id": "crux-5432109876",
+        "country": "IN",
+        "device_type": "mobile",
+        "connection_type": "3g",
+        "optimization": "optimized",
+        "metrics": {
+          "navigation_timing": {
+            "time_to_first_byte": 415,
+            "dom_content_loaded": 1450,
+            "load_event": 1850
+          },
+          "paint_timing": {
+            "first_paint": 685,
+            "first_contentful_paint": 925
+          },
+          "largest_contentful_paint": 1950,
+          "first_input_delay": 65,
+          "cumulative_layout_shift": 0.11,
+          "time_to_interactive": 2350
+        }
+      }
+    ],
+    "historical_trends": {
+      "largest_contentful_paint": {
+        "months": ["2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01"],
+        "baseline": [2950, 2900, 2875, 2825, 2850, 2850],
+        "optimized": [null, null, null, 2100, 1750, 1450]
+      },
+      "first_input_delay": {
+        "months": ["2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01"],
+        "baseline": [145, 140, 138, 137, 136, 135],
+        "optimized": [null, null, null, 95, 65, 45]
+      },
+      "cumulative_layout_shift": {
+        "months": ["2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01"],
+        "baseline": [0.22, 0.21, 0.20, 0.20, 0.19, 0.19],
+        "optimized": [null, null, null, 0.15, 0.11, 0.08]
+      }
+    }
+  }
