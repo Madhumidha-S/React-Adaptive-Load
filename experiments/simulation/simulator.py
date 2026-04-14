@@ -70,15 +70,17 @@ class SimulationEnvironment:
 
             # 3. Predict NEXT components
             if i >= 1:
-                recent = self.behavior.get_recent_sequence(3)
+                recent = self.behavior.get_recent_interactions(3)
                 registered_ids = list(self.components.keys())
 
                 # Session-local conditional distribution P(ci|cj) from the
                 # behavior interaction graph (Equation 2 in the paper).
                 transition_probs = {}
                 if recent:
+                    last_inter = recent[-1]
+                    last_comp = last_inter.get("componentId", last_inter) if isinstance(last_inter, dict) else last_inter
                     transition_probs = self.behavior.get_transition_distribution(
-                        recent[-1]
+                        last_comp
                     )
 
                 # Novelty logic vs Baseline logic
@@ -120,7 +122,7 @@ class SimulationEnvironment:
                         trace_events.append(
                             {
                                 "step": i,
-                                "recent": list(recent),
+                                "recent": [r.get("componentId", r) if isinstance(r, dict) else r for r in recent],
                                 "predicted_top1": top1["componentId"]
                                 if top1
                                 else None,
@@ -133,14 +135,11 @@ class SimulationEnvironment:
                         )
 
                     # Update priors for cold start learning
-                    self.predictor.update_prior(comp_id, next_actual)
+                    self.predictor.update_prior(recent, next_actual)
 
-        # Post-session training for LSTM if novelty enabled
+        # Post-session training for Transformer if novelty enabled
         if self.enable_novelties and self.predictor.total_predictions > 20:
-            sanitized_seq = [
-                s["component"] if isinstance(s, dict) else s for s in session_sequence
-            ]
-            self.predictor.train_on_session(sanitized_seq)
+            self.predictor.train_on_session(self.behavior.history)
 
         result = {
             "avg_load_time": total_load_time / total_steps,

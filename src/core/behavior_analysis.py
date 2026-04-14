@@ -7,10 +7,9 @@ class BehaviorAnalysis:
         self.history = []
         # Ordered list of component IDs visited in this session
         self.session_sequence = []
-        # Per-session transition graph G = (V, E) capturing N(ci, cj) co-occurrence
-        # where an edge cj -> ci counts how often ci follows cj (Equation 2 in paper).
+        # Per-session transition graph: tracking 2nd-order transitions (prev_prev, prev) -> current
         self.transition_counts = defaultdict(lambda: defaultdict(int))
-        self._last_component_id = None
+        self._last_two = []
 
     def record_interaction(self, component_id, velocity=0, scroll=0, dwell=0, dwell_time=None):
         """
@@ -24,9 +23,11 @@ class BehaviorAnalysis:
         if dwell_time is not None:
             dwell = dwell_time
 
-        # Update transition graph using the previous component (if any)
-        if self._last_component_id is not None:
-            self.transition_counts[self._last_component_id][component_id] += 1
+        # Update 2nd-order transition graph using the previous two components (if available)
+        if len(self._last_two) > 0:
+            # Use tuple of last available items as the state key
+            state_key = tuple(self._last_two)
+            self.transition_counts[state_key][component_id] += 1
 
         interaction = {
             "componentId": component_id,
@@ -36,12 +37,20 @@ class BehaviorAnalysis:
         }
         self.history.append(interaction)
         self.session_sequence.append(component_id)
-        self._last_component_id = component_id
+        
+        self._last_two.append(component_id)
+        if len(self._last_two) > 2:
+            self._last_two.pop(0)
+
         return interaction
 
     def get_recent_sequence(self, length=3):
         """Return the most recent component visit sequence (sliding window)."""
         return self.session_sequence[-length:]
+
+    def get_recent_interactions(self, length=3):
+        """Return the rich multimodal interactions (sliding window)."""
+        return self.history[-length:]
 
     def get_transition_distribution(self, from_component):
         """
@@ -62,4 +71,4 @@ class BehaviorAnalysis:
         self.history = []
         self.session_sequence = []
         self.transition_counts = defaultdict(lambda: defaultdict(int))
-        self._last_component_id = None
+        self._last_two = []

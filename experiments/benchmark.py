@@ -1,6 +1,14 @@
 import sys
 import os
 import random
+import numpy as np
+import tensorflow as tf
+
+# Fix seeds for absolute reproducibility
+os.environ['PYTHONHASHSEED'] = '42'
+random.seed(42)
+np.random.seed(42)
+tf.random.set_seed(42)
 
 # Add project root to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -27,7 +35,7 @@ else:
     }
     PATTERNS = []
 
-def generate_sessions(count=100):
+def generate_sessions(count=300):
     sessions = []
     # Try to load HAR sessions first
     har_sessions = DataParser.parse_har_sessions(HAR_PATH)
@@ -50,8 +58,8 @@ def generate_sessions(count=100):
     return sessions
 
 def run_benchmark():
-    print("🚀 Initializing Python ML Performance Benchmark (Real Data Mode)...")
-    sessions = generate_sessions(100)
+    print("🚀 Initializing Python ML Performance Benchmark (Real Data Mode, Seeds Locked)...")
+    sessions = generate_sessions(300)
     
     # Test Scenario: Mobile, Low Battery (Green Computing Test)
     CONTEXT = {
