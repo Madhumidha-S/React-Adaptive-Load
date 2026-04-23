@@ -1,4 +1,4 @@
-# ReactSmart ML: Adaptive & Energy-Aware React Preloading
+# React-Adaptive-Load: Energy-Aware Preloading
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue.svg)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.21-orange.svg)
@@ -7,9 +7,9 @@
 
 ## Overview
 
-**ReactSmart ML** is an intelligent, context-aware web prefetching framework designed to optimize the performance of scalable Single Page Applications (SPAs). While modern React applications utilize lazy-loading to minimize initial bundle limits, this architecture inherently introduces UI latency during client-side routing. Existing predictive preloading systems (e.g., Guess.js) attempt to mitigate this by aggressively fetching statistical probabilities in the background, a strategy that catastrophically drains mobile data and device battery.
+**React-Adaptive-Load** is an intelligent, context-aware web prefetching framework designed to optimize the performance of scalable Single Page Applications (SPAs). While modern React applications utilize lazy-loading to minimize initial bundle limits, this architecture inherently introduces UI latency during client-side routing. Existing predictive preloading systems (e.g., Guess.js) attempt to mitigate this by aggressively fetching statistical probabilities in the background, a strategy that catastrophically drains mobile data and device battery.
 
-ReactSmart directly addresses this limitation by integrating **Green Computing** pipelines alongside a **Multimodal Transformer Neural Network**. The framework achieves >98% accuracy in predicting subsequent user interactions, while dynamically evaluating real-time device battery reserves and network latency. The engine executes speculative background network requests only when mathematically deemed a safe, energy-efficient maneuver.
+React-Adaptive-Load directly addresses this limitation by integrating **Green Computing** pipelines alongside a **Multimodal Transformer Neural Network**. The framework achieves >98% accuracy in predicting subsequent user interactions, while dynamically evaluating real-time device battery reserves and network latency. The engine executes speculative background network requests only when mathematically deemed a safe, energy-efficient maneuver.
 
 ---
 
@@ -22,7 +22,7 @@ ReactSmart directly addresses this limitation by integrating **Green Computing**
    To bypass deep learning cold-start latency, early session sequences are secured against a 2nd-Order (Bigram) Markov Chain Transition Graph. This algorithm isolates distinct graph branches and guarantees an absolute baseline prediction accuracy floor of >98%.
 
 3. **Multi-Objective Optimization (MOP)**
-   A dynamic loading module engineered for Green Computing. The system calculates executing thresholds based on context. Under critical states (e.g., `< 20% Battery Capacity`), ReactSmart actively throttles network fetches to preserve device battery life over marginal UI rendering improvements.
+   A dynamic loading module engineered for Green Computing. The system calculates executing thresholds based on context. Under critical states (e.g., `< 20% Battery Capacity`), React-Adaptive-Load actively throttles network fetches to preserve device battery life over marginal UI rendering improvements.
 
 4. **Deterministic Experimental Benchmarking**
    The framework includes a rigid execution pipeline designed to process live HTTP Archive (HAR) maps and parsed e-commerce simulations for scientifically reproducible benchmarking.
