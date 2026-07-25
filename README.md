@@ -45,14 +45,24 @@ React-Adaptive-Load/
 │   ├── benchmark.py                      # Primary execution and measurement harness
 │   └── simulation/
 │       └── simulator.py                  # Core sequence simulator logic
-└── src/
-    ├── core/
-    │   ├── behavior_analysis.py          # Session tracking & Markov transition graph
-    │   ├── dynamic_loader.py             # MOP threshold logic & Green Computing module
-    │   ├── evaluation.py                 # Abstract metric utilities
-    │   └── prediction_engine.py          # The Transformer block and Hybrid Blending
-    └── utils/
-        └── data_parser.py                # Pipeline for transpiling JSON & HAR tracking
+├── src/
+│   ├── core/
+│   │   ├── behavior_analysis.py          # Session tracking & Markov transition graph
+│   │   ├── dynamic_loader.py             # MOP threshold logic & Green Computing module
+│   │   ├── evaluation.py                 # Abstract metric utilities
+│   │   └── prediction_engine.py          # The Transformer block and Hybrid Blending
+│   └── utils/
+│       └── data_parser.py                # Pipeline for transpiling JSON & HAR tracking
+├── demo_backend/
+│   └── app.py                            # Flask API exposing /api/predict on port 5001
+├── demo_frontend/                        # React 19 + Vite SPA (interactive demo)
+│   └── src/
+│       ├── App.jsx                       # Router + page wrappers with preload indicator
+│       ├── MLContext.jsx                 # Telemetry → backend POST → preloaded cache
+│       ├── Dashboard.jsx                 # Side panel: battery slider, threshold, predictions
+│       └── main.jsx
+└── paper/
+    └── 127156089_basepaper_*.pdf         # Base research paper this framework reproduces
 ```
 
 ---

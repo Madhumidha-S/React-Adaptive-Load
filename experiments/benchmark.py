@@ -18,7 +18,7 @@ from src.utils.data_parser import DataParser
 
 # Component setup
 CONFIG_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'sessions', 'ecommerce_config.json')
-HAR_PATH = os.path.join(os.path.dirname(__file__), '..', 'reactsmart-performance-analysis', 'data', 'sessions', 'harSample.json')
+HAR_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'sessions', 'harSample.json')
 
 config = DataParser.load_scenario_config(CONFIG_PATH)
 if config:
